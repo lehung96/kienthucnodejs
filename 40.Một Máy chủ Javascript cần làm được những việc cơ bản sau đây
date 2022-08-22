@@ -1,0 +1,7 @@
+=> Tổ chức tốt các đoạn mã nguồn thành các phần có thể tái sử dụng 
+=> Khả năng xử lý File 
+=> Kết nối và truy cập Database
+=> Giao tiếp và truy cập Internet 
+=> Tiếp nhận các request và Response đáp ứng trả về các kết quả
+ví dụ: HTTP, FTP, SSH, AMQP, .... 
+=> Có một cách để xử lý các công việc mà mất rất nhiều thời gian 

@@ -1,0 +1,21 @@
+// ở Events Emitter đã tạo ra một  cái chương trình mà nó đã đón nhận một sự kiện rất đơn giản 
+
+Tìm hiểu về Event Emitter trong core của nodejs  thì nó có đơn giản như vậy hay ko ???
+
+Cái cơ chế và cách cài đặt  có tương tự  hay không ???
+
+trong bài học này chúng ta sẽ đi tìm hiểu và hiều cơ bản bên trong Event Emitter của Nodejs nó đang làm những cái gì ???
+==> Đầu tiên chúng ta mở trình duyệt ra vào trang documentation của nodejs và tìm đến đặc tả "Events" 
+và ỏ cái "Table of contents"  nó sẽ mô tả cái class  "Class: EventEmitter" này 
+và các cái hàm cái method sẵn có ở bên trong  EventEmitter 
+ví dụ: hàm emitter.on(eventName, listener)
+      hàm  emitter.emit(eventName[, ...args])
+
+
+và ==> bây giờ sẽ quya lại phần Source nodejs tìm đến 1 file event.js trong thư mục lib này
+trong file event.js này tìm addListener 
+
+// hàm 
+EventEmitter.prototype.addListener = function addListener(type, listener) {
+  return _addListener(this, type, listener, false);
+};

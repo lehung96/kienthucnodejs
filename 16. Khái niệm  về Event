@@ -1,0 +1,32 @@
+=> Khía cạnh nền tảng của nodejs và các thành phần module core của nodejs xây dựng trên đó 
+Tìm hiểu về Event và Even Emitter trong nodejs
+
+Khái niệm Event:
+
+Ví Dụ:  Hằng ngày các bạn đi học ngày nào cũng như ngày nào và bỗng một ngày đẹp trời 
+Bố của bạn gọi và nói chuyện hỏi một câu Con đã học như thế nào mà " hôm nay lại bị điểm kém"
+ và những lúc như thế này bạn chỉ biết xoa đầu và gãi tai và cố gắng về sau học tốt còn biết làm gì nữa 
+
+ ==> trong cái sự kiện trên có một cái tình tiết đó là " hôm nay lại bị điểm kém"
+
+ Sự kiện: Bị Điểm Kém   => Sự kiện Event là 1 thứ gì đó xảy ra trong ứng dụng mà 
+ chúng ta có thể đáp ứng lại và xử lý nó:
+
+ =>>>> " Trong Nodejs có 2 loại sự kiện đó là :
+ --> System Events (C++ core): đây là sự kiện đến từ trong core của nodejs trong  lõi C++ nó sẽ bắt các sự kiện xảy ra trong hệ thống để thông báo
+                     cho chúng ta biết để xử lý 
+     ví dụ: đọc file dữ liệu đã tải xuống từ internet có kết nối web service, hay là một nhiệm vụ nào đó mà mình hoàn tất 
+
+ --> Custom Events( javascript core): ĐÓN nhận và bắt các sự kiện do chính mình  tạo ra 
+     ví dụ: Kiểm tra điểm của học sinh Nguyen Anh Do mà nhỏ hơn 4 thì lập tức tôi sẽ gửi một thông báo đến 
+     phụ huynh của bạn ấy luôn 
+ 
+
+  ==> điểm khác nhau của hai cái sự kiện này là: 
+  + system Events đến từ cái tầng rất thấp của hệ điều hành và được phát ra bưởi cái thư viện là libuv ( đây là một bộ thư viện xử lý ở tầng rất thấp)
+
+
+  + Custom Events thì nó đến từ tầng cao hơn từ một đối tượng có thể điều kiển đó là Event Emitter và đối tượng này có thể cấu hình có thể thiết lập theo ý muốn của chúng ta 
+
+
+ Người phát sự kiện: Thầy giáo ?

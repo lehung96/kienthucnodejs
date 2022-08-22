@@ -1,0 +1,26 @@
+Trong phần này chúng ta cần phải tìm hiểu một vài khái niệm ở phía máy chủ 
+
+làm thế nào một máy khách hành có thể truy cập đến cái địa chỉ  web của bạn ?
+
+Hoặc làm thế nào để có thể gửi dữ liệu giữa 2 cái máy tính trên mạng Internet với nhau ?
+
+và chúng ta sẽ tìm hiểu khái niệm TCP/IP 
+đây là một giao thức rất phổ biến trên mạng Internet có thể hình dung là nội dung web của chúng ta trao đổi như thế nào ở trong ứng dụng nodejs
+
+Làm thế nào để nó có thể hiển thị ở trên trình duyệt của người dùng ??
+
+và cái giao thức TCP/IP nó gần như là một cái xương sống là code lõi của cái mạng máy tính 
+
+
+==> Giao thức Protocol 
+
+=>> GIAO Thức là tập các cái luật, các quy tắc thỏa thuận ở hai phía giao tiếp với nhau
+
+==> Cả Client và Server được lập trình để hiểu và sử dụng tập các luật đó
+=> và TCP/IP LÀ một bộ giao thức truyền thông được cài đặt chồng giao thức mà Internet và hầu hết mạng máy tính chạy trên nó 
+
+=> Giao thức giống như việc 2 người khác ở 2 nước thỏa thuận sử dụng 1 ngôn ngữ chung để nói chuyện: ví dụ: Tiếng anh 
+
+
+
+

@@ -1,0 +1,7 @@
+==> Đi xây dựng một cái phiên bản rất cơ bản có thể hoạt động giống với cơ chế hoạt động của Event Emitter trong nodejs , tức là 
+
+==> Chúng ta sẽ đi tạo một đối tượng có thể giám sát được cái điểm học của một học sinh 
+và nếu cái điểm đó thấp quá chúng ta phát ra một thông báo một cái sự kiện điểm thấp  
+
+ví dụ:  tạo một file emitter.js để // emitter.js có nhiệm vụ kích hoạt và xử lý các sự kiện 
+// Tiếp đến chúng ta phải quay lai chương trình chính là file appEmitter.js  để  viết logic cho cái ứng dụng này 

@@ -1,0 +1,9 @@
+Một Máy Chủ javascript cần làm được những gì ?
+
+=> Một máy chủ javascript cần làm được những việc cơ bản sau đây 
+
++) Tổ chức tốt các đoạn mã nguồn thành các phần có thể tái sử dụng 
++) Khả năng xử lý File
++) Kết nối và truy cập Database
++ Nhận các Request và Response đáp ứng và trả về  HTTP, FTP, SSH, AMQP,
+

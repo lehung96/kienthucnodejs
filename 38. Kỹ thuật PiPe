@@ -1,0 +1,20 @@
+kỹ thuật khi chúng ta làm việc với stream đó là Pipe 
+và Pipe là một cái phương thức được xây dựng sẵn ở bên trong stream và chúng ta sẽ đi xem cái Pipe này 
+được hiểu như thế nào ở bên trong nodejs
+
+Pipe là một cơ chế kết nối 2 cái stream lại với nhau, đầu ra của Stream này được
+nối với đầu vào của Stream khác
+
+Trong Nodejs thì chúng ta sẽ pipe từ Một Readale stream sang một Writable stream
+
+điểm khác biệt khi chúng ta thực hiện cái kỹ thuật pipe này 
+
+
+Thông thường khi mình đọc một file thì cái luồng ghi bao giờ cũng chậm hơn cái luồng đọc
+trong trường hợp server đọc cái dữ liệu và liên tục push thì buffer có thể sẽ bị chàn và không nhận được dữ liệu nữa khi đó 
+nó xãy ra một cái hiện tượng là áp lực ngược
+
+ví dụ: khi rót nước vào trong một cái bình qua một cái phễu nếu mà bạn đổ nước quá nhanh không xuống kịp sẽ bị chàn ra ngoài lý do là cái miệng bình nó hẹp quá và cái việc đọc ghi file cũng như vậy 
+
+==> với cái phương thức pipe này thì cái vấn đề đó sẽ được khắc phục 
+và khi sử dụng cái phương thức pipe này để đọc nghi trên một luồng stream thì cái nội tại của nó sẽ biết được là 

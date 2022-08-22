@@ -1,0 +1,77 @@
+khía cạnh nền tảng khác của javascript cần nằm được khi làm việc với nodejs là:
+
+Hàm Khởi tạo và sự kế thừa Prototype
+
+Sự Kế thừa - Inheritance 
+
+-> Là việc một object truy cập đến các thuộc tính và phương thức của một 
+object khác
+->  Hơi khác với các ngôn ngữ lập trình khá, javascript đưa thêm vào khái niệm kế thừa Prototype
+
+=> sự Kế thừa Prototype 
+
+Hàm Khởi tạo 
+=> Là hàm được sử dụng để khởi tạo đối tượng 
+=> Sử dụng từ khóa this để truy cập đến các biến của đối tượng hoặc khởi tạo mới 
+
+Ví Dụ:  
+bước 1 : định nghĩa đối tượng Person với 2 thuộc tính name và password
+function Person(useName, passWord){
+    this.useName = useName,
+    this.passWord = passWord
+}
+
+// Bước 2: thông qua cái sự kết thừa prototype chúng ta sẽ  mở rộng cái lớp đối tượng này ra 
+   và thêm 1 cái phương thức cho lớp đối tượng này và mở rộng cái hàm getName
+Person.prototype.getName = function () {
+    return this.useName
+}
+
+
+Person.prototype.getPassword = function (){
+    return this.passWord;
+}
+
+Person.prototype.getLevel = function (){
+    return this.level;
+}
+
+Person.prototype.level = "admin";
+
+
+// mong muốn khởi tạo cái cấu trúc mới cho đối tượng là user thì định nghĩa một fucntion là user
+function User(useName){
+    this.useName = useName;
+    
+}
+
+User.prototype = new Person();
+
+
+var person = new Person("SG", "78910");
+
+var user = new User("Hà Nội"," dfvhh")
+ 
+
+console.log(user.getName());
+
+
+console.log(user.getLevel());
+
+console.log((person.getName()));
+
+Date.prototype.vnFormat = function () {
+    var yyyy = this.getFullYear();
+    var mm = this.getHours() + 1;
+    var dd = this.getDate();
+
+    return dd + "/" + mm +"/" + yyyy;
+}
+
+var now = new Date()
+var xms = new Date(2016, 11, 25);
+console.log(now.vnFormat());
+console.log(xms.vnFormat());
+
+
+

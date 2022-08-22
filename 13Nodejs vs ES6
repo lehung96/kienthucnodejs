@@ -1,0 +1,49 @@
+nodeJS đã thêm vào tính năng ES6 của cái chuẩn mới nhất của javascript 
+và nodeJS luôn cập nhật tính năng mới nhất của V8 engin đồng nghĩa là chúng ta có thể sử dụng tính năng ES6
+
+
+ES6 ở trong nodeJS được chia là 3 nhóm tính năng 
+
+
++ ) Nhóm Một là Shipping: Tính năng ổn định và được bật mặc định trong nodejs để sử dụng 
+
++ ) Staged: Tính năng gần như hoạt thiện và có thể sử dụng bằng việc khai báo cờ- harmony, nhưng chưa ổn định 
++ ) In progress: Tính năng đang thử nghiệm, có thể sử dụng . V8 team engineer có thể thay đổi mà không cần THÔNG BÁO 
+
+
+=>> Xem các tính năng đang thử nghiệm của nodejs
+node --v8-options | grep "in progress"
+
+=> đi xem các tính năng nào đã có mặc định trong nodejs phiên bản 15.0 chúng ta đang sử dụng :
+ vào docs chọn "ES6 and beyond"
+
+ và tính năng nào đã được enable mặc định ở trong nodejs 
+ sẽ click vào trang "node.green" thấy được tính năng của ES6 Đã được sử dụng trong ES6
+
+ ===> Tính năng for..of loops để chúng ta thử nghiệm xem là nó sử dụng như thế nào ở trong nodejs phiên bản 16 của chúng ta
+THÔNG QUA Cái dấu hỏi này để xem cách sử dụng 
+
+
+ví dụ: Sử dụng ES6 TRONG nodejs BẢN 16 
+
+=> Sử dụng cú pháp là for..of loops
+
+var arr = [1,2,3];
+
+for (var item of arr){
+    console.log(item, item ===3);
+}
+
+// với cú pháp for..of loops này thì chúng ta có thể thao tác được với giá trị của một mảng cụ thể ở đây chúng ta có mảng arr 
+
+
+Cú Pháp trong ES6 Nữa đó là một cái từ khóa const 
+Thì cái nhiệm vụ của const chúng ta sẽ khai báo ra một cái biến mà chúng ta 
+sẽ không được thay đổi nó sau này 
+ví dụ: 
+const name = "Hoa";
+//nếu giả sử trước khi in ra thay đổi cái giá trị name này thì sao ? thì chương trình có chạy đúng hay ko? Thì vẫn in là Hoa
+nam= "Mai"
+ console.log(name);
+
+

@@ -1,0 +1,61 @@
+các đối tượng object và Bộ khai báo object Literal 
+
+Không giống như trong như các ngôn ngữ lập trình hướng đấy tượng khác 
+javascript không thực sự có khái niệm lớp
+và đối với ngôn ngữ lập trình bạn phải xấy dự các lớp class rồi sau đó mới khai báo các đối tượng để sử dụng 
+=> Nhưng trong javascript thì đối tượng được tạo trực tiếp và có thể được tạo bằng nhiều cách khác nhau, đối tượng có thể được kế thừa từ các đối 
+tượng khác 
+
+=>  và để hiểu được đối tượng object trong javascript thì mình phải cần hiểu được khái niệm cặp tên giá trị
+{
+    name: value
+}
+
+name/ value
+=> là cặp tên ánh xạ với một giá trị 
+
+-> trong cùng một ngữ cảnh thì Name có thể được định nghĩa nhiều hơn 1 lần, những 
+chỉ có một giá trị value
+-> value thì có thể có nhiều cặp Name/value khác 
+
+
+=> object là tập hợp các cặp Name/value
+
+=> là các định nghĩa đơn giản trong javascript
+=> Các kiểu giá value có thể mang:
+
++ Primittiv: String, Number, ....
++object
++fucntion
+
+
+
+object Literal 
+=> Là Cách khai báo nhanh đối tượng trong javascript
+
+=> Gồm các cặp Name/ value được ngăn cách nhau bởi dấu phẩy trong cặp ngoặc nhọn 
+
+{
+    Name: "Sai Gon",
+    Age: 18,
+
+    Address: {
+        City: 'Hà Nội',
+        Country:'Việt Nam'
+    }
+
+} 
+
+
+ví dụ: 
+var person = {
+    firstName: " Sài Gòn",
+    lastName: "Hà Nội",
+    sayHello: function(){
+        console.log("Hello, " + this.firstName + " "+ this.lastName);
+    }
+}
+
+
+person.sayHello();
+các phương pháp, phương thức truy cập hàm => truy cập thuộc tính của một object một cách trực tiếp thông qua dấu ngoặc vuông 

@@ -1,0 +1,22 @@
+callback?  là một hàm được gọi lại khi một tác vụ hoàn thành 
+=> Là một hàm callback là một fucntion được truyền vào lời gọi một hàm khác 
+=> Mà nó được thực thi vào một thời điểm tương lại sau khi hoàn tất một công việc nào đó
+
+===> callback là một cái kỹ thuật rất quan trọng khi chúng ta sử dụng code không đồng bộ ở trong nodejs  và 
+hầu hết cái api của  node thì đều được viết ở dưới dạng mô hình có hỗ trợ hàm callback
+
+ví dụ: Hàm callback này nó thực thi như thế nào ???
+
+// demo và chạy thử một cái chương trình có lời gọi hàm call back
+var firstFunction = function (params) {
+    console.log("I am first!");
+}
+
+// và một hàm 
+var secondFunction = function(){
+    setTimeout(firstFunction, 5000);
+    console.log("Im second!");
+};
+
+
+secondFunction();

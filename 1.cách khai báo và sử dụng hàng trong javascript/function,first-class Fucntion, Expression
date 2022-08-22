@@ -1,0 +1,43 @@
+1. Hàm trong javascript 
+
+Định nghĩa hàm 
+-> Hàm là một khối mã lệnh độc lập và được xác định  bằng tên 
+-> Cho phép bạn tái sử dụng một nhóm các mã ko mất quá nhiều thời gian để viết lại cùng một cái đoạn mã nhiều lần
+
+ví dụ:  định nghĩa một function 
+function sayHello(){
+    console.log("Hello Node.js !!")
+}
+
+sayHello();
+
+First-class fucntion ( hiểu đơn giản là ngôn ngữ cho phép sử dụng hàm giống như một biến và cho phép hàm trong hàm  )
+ví dụ: 
+/ Định nghĩa một hàm first-class- function 
+
+function logSaying(fn) {
+    fn()
+}
+
+logSaying(sayHello);
+
+-> Ngôn ngữ lập trình được goi là First-class-fucntion khi mà hàm (fucntion) trong
+ngôn ngữ đó được sử dụng như một  object (object ở đây ko phải trong lập trình hướng đối tượng) mà nó mang ý nghĩa chung chung
+-> Trong trường hợp này object chính là fucntion
+-> javascript là First-class fucntion
+ + Có thể đóng vai trò làm tham số của Hàm
+ + Có thể đó vai trò là giá trị trả về từ một hàm
+ + Có thể gán cho một biến 
+
+
+
+biểu thức - hàm expression
+ví dụ: 
+var sayGoodbye = function () {
+console.log("Good bye!!");
+}
+
+
+sayGoodbye();
+-> là một khối hoặc đoạn mã nguồn mà kết quả của nó trả về một giá trị  (nó giống như việc gán một biến cho một giá trị)
+-> ví dụ: a = 1;

@@ -1,0 +1,24 @@
+JOSON Là gì? 
+
+Json (javascript object Notation) là một kiểu dữ liệu rất phố biến trong javascript
+=> JOSON là một dạng dữ liệu tuân theo 1 quy luật  nhất định mà hầu hết các ngôn ngữ lập trình hiện nay để có thể đọc được, viết được 
+=> Có thể sử dụng và lưu trữ trong một file, hoặc một bản ghi trong CSDL rất dễ dàng 
+=> Mặc Định, các javascript engines được xây dựng đều hiểu và đọc được
+
+ví dụ:
+{
+  "orders": {},
+  "filters": {},
+  "pageIndex": 1,
+  "pageSize": 100,
+  "customFilter": {
+    "fromDate": "2011/04/22T00:00:00Z",
+    "toDate": "2022/05/22T00:00:00Z",
+    "typeDate": "ADDDATE"
+  }
+}
+
+Cấu trúc chuỗi JSON 
+
+=> chuỗi JOSON được bọc lại bởi cặp dấu {}
+=> Các key, value của JOSON bắt buộc đặt trong  "dấu nháy kép"

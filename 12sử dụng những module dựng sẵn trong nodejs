@@ -1,0 +1,64 @@
+=> Các Model dựng sẵn của Nodejs chúng có những cái modele nào dựng sẵn 
+và chúng ta chỉ việc require và sử dụng , và cách sử dụng chúng như thế nào ?
+
+=> và để biết được chúng có những modele nào ? API nào thì chúng ta sẽ vào cái trang chủ !
+Tài liệu phát triển là một thứ rất quan trọng chúng ta cần phải đọc, tìm hiểu trước khi chúng ta phát triển một dự án 
+
++ Nodejs có rất nhiều các cái thư viện cũng như các cái tài liệu đi kèm các 
+cái Module sẵn có của nó Tài Liệu đặc tả 
+ví dụ: như Events
+
+ghi chú: Đối với util và URL thì có thể ứng dụng nó vào CÁC BÀI TOÁN liên quan để xử lý đường dẫn ví dụ: xử lí định tuyết trong ứng dụng web
+
+
+File system
+
+Path // xử lý các đường dẫn 
+
+URL // xử lý các cái liên kết trên internet
+
+sử dụng module URL ĐỂ ứng dụng vào trong chương trình của chúng ta 
+ví dụ:
+var url = require("url")
+
+//url.parse(urlString[, parseQueryString[, slashesDenoteHost]])
+// tham số được truyền vào là urlString
+
+//https://nodejs.org/docs/latest-v15.x/api/url.htm
+
+var urlInfo = url.parse("https://nodejs.org/docs/latest-v15.x/api/url.htm");
+
+console.log(urlInfo);
+
+Utilities // là những cái tiện ích nhỏ nhỏ Nodejs tạo ra sẵn hỗ trợ cho chúng ta chỉ việc Require và sử dụng 
+
+
+chúng ta tìm hiểu trong Utilities cái tiện ích này nó có những gì ?
+
+trong này có các cái hàm :
+
+util.inherits(constructor, superConstructor)     // cho phép chúng ta kế thừa từ một đối tượng với  một cái  super (tức là đối tượng cha)
+
+util.isArray(object)             // Kiểm tra nó có là một mảng hay không 
+
+util.format(format[, ...args]) // ví dụ sử dụng một cái thư viện util để format cái cái chuỗi    // Hàm format 
+
+==> Với hàm format tham số truyền vào là một string 
+ví dụ:
+var util = require("util")
+
+var name = "Hoa";
+
+var message = util.format("hello, %s", name);
+
+console.log(message);
+util.log(message);
+
+console.log(util.isArray([]));
+console.log(util.isArray(new Array));
+console.log(util.isArray({}));
+
+//lưu ý: sau này có thể sử dụng cái util này thực hiện kiểm tra một cái đối tượng có phải là mảng hay không'
+
+
+==> Các Module dựng sẵn này khác gì với modele chúng ta tự định nghĩa 

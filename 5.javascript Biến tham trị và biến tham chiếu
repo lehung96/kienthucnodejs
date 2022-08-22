@@ -1,0 +1,45 @@
+một cách thực hoạt động nữa để mình có thể hiểu  các đoạn mã nguồn node js hoạt động như thế nào cũng như 
+các thức hoạt động của module và require trong node js
+
+=>> Chúng ta cần hiểu các khái niệm "Tham trị" By Value 
+=>> và "tham chiếu" By Reference /re fe rần/
+
+=>>> Khi CHÚNG TA Nhắc đến biến tham trị và biến tham chiếu là chúng ta đang đi xem xét các cái biến này hoạt động như thế nào 
+trong javascript
+--> Khi mà bạn truyền nó vào hàm thì chúng ta quan tâm đến giá trị đó là một object hay là kiểu giá trị nguyên thủy
+
+=>> vậy kiểu dữ liệu nguyên thủy là gì ?
+
+
+*** Kiểu dữ liệu nguyên thủy là Primitive
+->> Primitive Là kiểu dữ liệu nguyên thủy mà nó thể hiện một giá trị đơn nhất 
+--> Đại diện cho các biến tham trị
+
+->> Ví dụ như : number, string là kiểu dữ liệu nguyên thủy 
+
+function changeByValue (){
+    b= 2;
+}
+
+var a = 1;
+
+changeByValue(a);
+
+console.log(a);
+
+*** Kiểu tham chiếu (Reference Types)
+Kiểu này thì phức tạp hơn kiểu tham trị và được dùng cho các kiểu dữ liệu phức tạp: Object, Array, Function.
+ Ở đây khi gán cho nó một giá trị thì nó không lưu lại giá trị này mà thực chất nó lưu lại địa chỉ của ô nhớ lưu giá trị này.
+vi du: 
+function changeByRef(obj){
+    obj.prop1 = function(){
+        //
+    };
+    obj.newProp2 = {},
+    obj.d = 100;
+}
+
+var c = {}
+c.prop1 = {};
+changeByRef(c)
+ console.log(c);
